@@ -1,6 +1,7 @@
 import React from 'react';
+import Track from '../track/track';
 
-export default function Trackist({items}) {
+export default function Tracklist({items}) {
    return (
     <div>
         {items.map((item, index) => (
