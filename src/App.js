@@ -13,6 +13,7 @@ import Playlist from './components/playlist/playlist';
 import Tracklist from './components/tracklist/tracklist';
 import Track from './components/track/track';
 
+
 function App() {
   const data= [ {name: 'calling', artist: 'henson', album: 'Jazz', id: 1}, {name: 'hello', artist: 'Chiringlamo', album: 'whyisitso', id:2}, {name: 'comegowithme', artist: 'booring', album: 'theendofall', id: 3}];
   return (
@@ -22,6 +23,7 @@ function App() {
       <Search />
       <SearchResults />
       <Tracklist items={data} />
+      <Playlist />
       
     </div>
   );

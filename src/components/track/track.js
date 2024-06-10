@@ -8,7 +8,7 @@ export default function Track(props) {
             <p>{props.artist}</p>
             <p>{props.album}</p>
             <p>{props.id}</p>
-            <p>&#43; &#x2B; &plus;</p>
+            <button>&#43;</button>
            
         </div>
     )
