@@ -1,18 +1,18 @@
 import React, {useState} from 'react';
 
 export default function Playlist(props) {
-    const [userInput, setUserInput] = useState("");
+    const [playlistname, setplaylistname] = useState("");
     function handleUserInput (e) {
-         setUserInput(e.target.value);
+         setplaylistname(e.target.value);
     }
     return (
     
     <div>    
-    <input type="text" name="playlistname" id="playlistname" onChange={handleUserInput} value={userInput}/>
+    <input type="text" name="playlistname" id="playlistname" onChange={handleUserInput} value={playlistname}/>
     <button>Save To Spotify</button>
     
     <div>
-        <h1>{userInput}</h1>
+        <h1>{playlistname}</h1>
     </div>
     </div>
     )
